@@ -65,8 +65,35 @@
     <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-tabs/dist/docsify-tabs.min.js"></script>
     <script>
+      // Custom plugin to transform `doable-codeblock` => `docsify-codeblock`
+      // `doable-codeblocks` rely on a `type filename` annotation.
+      // `docsify-codeblock` require a `type` annotation.
+      // Rhe mismatch prevents syntax-highlighting to fail.
+      // This plugin allows us to write `doable-codeblocks` but view 
+      // `docsify-codeblocks` with the proper syntax highlighting.
+      window.$docsify.plugins
+      .push((hook, vm) => {
+        hook.beforeEach(function(content) {
+          // Invoked each time before parsing the Markdown file.
 
-
+          // Tokenize the file, so we can process all code blocks.
+          const tokens = vm.compiler._marked.lexer(content);
+          // The tokens are a flat list, so sufficient to iterate over them
+          return tokens.map((token) => {
+            if (token.type === 'code') {
+              // if a code block and requires `lang` transformation
+              const lang = token.lang.split(' ');
+              const _lang = lang[0] === 'sh' ? 'bash' : lang[0]; 
+              if (lang.length > 1 || lang[0] === 'sh') {
+                // return transforms content
+                return token.raw.replace(token.lang, _lang)
+              }
+            }
+            // else return original content
+            return token.raw
+          }).join("");
+        });
+      })
     </script>
   </body>
 </html>

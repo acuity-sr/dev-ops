@@ -17,7 +17,7 @@ In general, we assume we are working on `windows` or `macos` systems, though we 
 
 ### **macos**
 [homebrew](https://brew.sh/) is a popular package manager and we'll be assuming this when necessary for the rest of the document.
-  ```null
+  ```sh
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   ```
 ### **\*nix**
@@ -34,7 +34,7 @@ If installing on your personal machine, it's best to install nodejs via the Node
 ### **bash**
 - Install [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 - Install LTS version of node.js and setup global dependencies
-  ```null
+  ```sh
     nvm install 14
     nvm use 14
     npm i yarn -g
@@ -42,7 +42,7 @@ If installing on your personal machine, it's best to install nodejs via the Node
 ### **windows**
 - Install [nvm-windows](https://github.com/coreybutler/nvm-windows#installation--upgrades)
 - Install LTS version of node.js and setup global dependencies
-  ```null
+  ```batch
     nvm install 14
     nvm use 14
     npm i yarn -g
@@ -69,7 +69,7 @@ choco install gh
 
 ### **macos**
 
-```bash
+```sh
 brew install azure-cli
 brew install kubernetes-cli
 brew install kubectx
@@ -123,7 +123,7 @@ to function. Not all the pre-reqs listed above make the cut. Specifically, packa
 
 (win/pre-reqs.bat)
 
-```bat win/pre-reqs.bat
+```batch win/pre-reqs.bat
 rem check that pre-reqs are installed
 
 rem prints success messages for each binary tested
@@ -224,7 +224,7 @@ if (%MISSING_REQS%=='true') (
 ### **bash**
 (nix/pre-reqs.sh)
 
-```bash nix/pre-reqs.sh
+```sh nix/pre-reqs.sh
 # checks that pre-reqs are installed
 
 # prints success messages for each binary tested

@@ -2,6 +2,7 @@
 - [Usage](usage.md)
 - **Configuration**
 - [Pre Requisites](pre-reqs.md)
+- [Globals](globals.md)
 - [Bootstrap](bootstrap.md)
 - [Infrastructure](infrastructure.md)
 - [Containers](containers.md)
