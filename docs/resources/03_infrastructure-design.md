@@ -1,4 +1,4 @@
-## Infrastructure Design
+# Infrastructure Design
 
 We now have an application to deploy, and a basic requirement that we are going to deploy
 the application over a kubernetes cluster on the Azure cloud. We also have a basic understanding of a concepts and pieces involved.
@@ -19,7 +19,7 @@ and build for the final goal. Meaning, our script will not piece-meal the buildi
 
 At some point in the future, we hope to incorporate as much of the security and governance capabilities as appropriate. The [Security and Governance workshop](https://github.com/Azure/sg-aks-workshop) will serve as a starting point for that exercise. The link is only provided here for (future) reference.
 
-### Infrastructure/Configuration inventory
+## Infrastructure/Configuration inventory
 
 These are the pieces that we'll need to provision/configure as part of our script.
 They are also split up by stage of creation, allowing us automate with clear separation
@@ -47,7 +47,7 @@ of responsibility.
 |           |                         | ClusterRole(monitoring)     |
 |           |                         | api-HorizontalPodAutoscaler |
 
-### Automation
+## Automation
 
 As with any automation, the point here is to have an ability to apply the general template being developed here to fit other needs.
 

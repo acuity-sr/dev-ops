@@ -8,7 +8,7 @@ github actions. For github-actions, we'll provide a working script with any inst
 Your personal system however will need you to ensure that the list below is setup correctly.
 In general, we assume we are working on `windows` or `macos` systems, though we generalize `macos` to `*nix` where possible.
 
-## OS package manager:
+## OS package manager
 
 <!-- tabs:start -->
 
@@ -25,7 +25,7 @@ builtin
 
 <!-- tabs:end -->
 
-## nodejs:
+## nodejs
 
 If installing on your personal machine, it's best to install nodejs via the Node Version Manager, which allows multiple versions of node.js to coexist and switching between them as needed.
 

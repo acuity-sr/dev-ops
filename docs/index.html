@@ -22,16 +22,13 @@
       window.$docsify = {
         search: "auto", // default
         search: {
-          maxAge: 86400000, // Expiration time, the default one day
+          maxAge: 0, // 86400000, // Expiration time, the default one day
           paths: "auto",
           placeholder: "Type to search",
           noData: "No Results!",
           // // Headline depth, 1 - 6
           depth: 6,
           hideOtherSidebarContent: false,
-        },
-        alias: {
-          "/": "/infrastructure-design.md",
         },
         name: "",
         repo: "",
@@ -58,6 +55,7 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-nginx.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-hcl.min.js"></script>
     <script
       src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
       type="text/javascript"
