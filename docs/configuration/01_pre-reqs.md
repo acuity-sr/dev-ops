@@ -46,7 +46,7 @@ If installing on your personal machine, it's best to install nodejs via the Node
     npm i yarn -g
   ```
 
-### **bash**
+### **\*nix**
 
 - Install [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 - Install LTS version of node.js and setup global dependencies
