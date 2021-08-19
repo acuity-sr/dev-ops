@@ -13,14 +13,17 @@ In general, we assume we are working on `windows` or `macos` systems, though we 
 <!-- tabs:start -->
 
 ### **windows**
+
 [chocolatey](https://docs.chocolatey.org/en-us/choco/setup#non-administrative-install) is among the most popular package managers for windows and we'll be assuming this when necessary for the rest of the documents. It's most convenient to setup the non-administrative install of chocolatey.
 
 ### **macos**
+
 [homebrew](https://brew.sh/) is a popular package manager and we'll be assuming this when necessary for the rest of the document.
   ```sh
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   ```
 ### **\*nix**
+
 builtin
 
 <!-- tabs:end -->
@@ -31,18 +34,19 @@ If installing on your personal machine, it's best to install nodejs via the Node
 
 <!-- tabs:start -->
 
-### **bash**
-- Install [nvm](https://github.com/nvm-sh/nvm#install--update-script)
-- Install LTS version of node.js and setup global dependencies
-  ```sh
-    nvm install 14
-    nvm use 14
-    npm i yarn -g
-  ```
 ### **windows**
 - Install [nvm-windows](https://github.com/coreybutler/nvm-windows#installation--upgrades)
 - Install LTS version of node.js and setup global dependencies
   ```batch
+    nvm install 14
+    nvm use 14
+    npm i yarn -g
+  ```
+
+### **bash**
+- Install [nvm](https://github.com/nvm-sh/nvm#install--update-script)
+- Install LTS version of node.js and setup global dependencies
+  ```sh
     nvm install 14
     nvm use 14
     npm i yarn -g
