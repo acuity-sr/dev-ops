@@ -35,6 +35,7 @@ If installing on your personal machine, it's best to install nodejs via the Node
 <!-- tabs:start -->
 
 ### **windows**
+
 - Install [nvm-windows](https://github.com/coreybutler/nvm-windows#installation--upgrades)
 - Install LTS version of node.js and setup global dependencies
   ```batch
@@ -44,6 +45,7 @@ If installing on your personal machine, it's best to install nodejs via the Node
   ```
 
 ### **bash**
+
 - Install [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 - Install LTS version of node.js and setup global dependencies
   ```sh
