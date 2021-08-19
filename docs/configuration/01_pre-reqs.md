@@ -19,6 +19,7 @@ In general, we assume we are working on `windows` or `macos` systems, though we 
 ### **macos**
 
 [homebrew](https://brew.sh/) is a popular package manager and we'll be assuming this when necessary for the rest of the document.
+
   ```sh
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   ```
@@ -86,7 +87,9 @@ brew install gh
 ```
 
 ### **\*nix**
+
 Please adapt the `macos` directions for your distributions package manager
+
 <!-- tabs:end -->
 
 
@@ -229,7 +232,7 @@ if (%MISSING_REQS%=='true') (
 )
 ```
 
-### **bash**
+### **\*nix**
 (nix/pre-reqs.sh)
 
 ```sh nix/pre-reqs.sh
