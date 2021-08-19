@@ -38,6 +38,7 @@ If installing on your personal machine, it's best to install nodejs via the Node
 
 - Install [nvm-windows](https://github.com/coreybutler/nvm-windows#installation--upgrades)
 - Install LTS version of node.js and setup global dependencies
+
   ```batch
     nvm install 14
     nvm use 14
@@ -48,6 +49,7 @@ If installing on your personal machine, it's best to install nodejs via the Node
 
 - Install [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 - Install LTS version of node.js and setup global dependencies
+
   ```sh
     nvm install 14
     nvm use 14
